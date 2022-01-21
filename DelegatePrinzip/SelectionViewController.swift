@@ -7,7 +7,13 @@
 
 import UIKit
 
+protocol keyDelegate {
+    func didTapKey(image: UIImage)
+}
+
 class SelectionViewController: UIViewController {
+    
+    var delegate: keyDelegate!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,10 +22,14 @@ class SelectionViewController: UIViewController {
     }
     
     @IBAction func greenKeyTapped(_ sender: UIButton) {
+        delegate.didTapKey(image: UIImage(named: "greenHouse")!)
+        
         dismiss(animated: true, completion: nil)
     }
     
     @IBAction func yellowKeyTapped(_ sender: UIButton) {
+        delegate.didTapKey(image: UIImage(named: "yellowHouse")!)
+        
         dismiss(animated: true, completion: nil)
     }
     

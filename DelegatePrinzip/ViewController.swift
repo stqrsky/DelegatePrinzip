@@ -7,8 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController, keyDelegate {
     
     @IBOutlet weak var house: UIImageView!
     
@@ -19,7 +18,12 @@ class ViewController: UIViewController {
 
     @IBAction func chooseButtonTapped(_ sender: UIButton) {
         let selectionVC = storyboard?.instantiateViewController(withIdentifier: "SelectionScreen") as! SelectionViewController
+        selectionVC.delegate = self
         present(selectionVC, animated: true, completion: nil)
+    }
+    
+    func didTapKey(image: UIImage) {
+        house.image = image
     }
     
 }
