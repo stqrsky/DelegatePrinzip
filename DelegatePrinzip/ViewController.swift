@@ -18,6 +18,8 @@ class ViewController: UIViewController {
     }
 
     @IBAction func chooseButtonTapped(_ sender: UIButton) {
+        let selectionVC = storyboard?.instantiateViewController(withIdentifier: "SelectionScreen") as! SelectionViewController
+        present(selectionVC, animated: true, completion: nil)
     }
     
 }
