@@ -11,9 +11,11 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var house: UIImageView!
     
+    @IBOutlet weak var chooseButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        chooseButton.layer.cornerRadius = chooseButton.frame.size.height / 4
     }
 
     @IBAction func chooseButtonTapped(_ sender: UIButton) {

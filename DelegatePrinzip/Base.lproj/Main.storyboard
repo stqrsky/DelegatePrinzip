@@ -47,6 +47,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="chooseButton" destination="Th8-5w-lwf" id="Oyo-EO-SSE"/>
                         <outlet property="house" destination="zfh-77-Zj1" id="M7e-Td-R6D"/>
                     </connections>
                 </viewController>
