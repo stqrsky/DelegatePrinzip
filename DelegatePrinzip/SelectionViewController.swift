@@ -16,9 +16,11 @@ class SelectionViewController: UIViewController {
     }
     
     @IBAction func greenKeyTapped(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
     }
     
     @IBAction func yellowKeyTapped(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
     }
     
 }
