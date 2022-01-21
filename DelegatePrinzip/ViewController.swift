@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, keyDelegate {
+class ViewController: UIViewController {
     
     @IBOutlet weak var house: UIImageView!
     
@@ -22,9 +22,10 @@ class ViewController: UIViewController, keyDelegate {
         present(selectionVC, animated: true, completion: nil)
     }
     
+}
+
+extension ViewController: keyDelegate {
     func didTapKey(image: UIImage) {
         house.image = image
     }
-    
 }
-
