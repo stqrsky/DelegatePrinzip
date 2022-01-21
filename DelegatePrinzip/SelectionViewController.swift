@@ -15,6 +15,10 @@ class SelectionViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
-
+    @IBAction func greenKeyTapped(_ sender: UIButton) {
+    }
+    
+    @IBAction func yellowKeyTapped(_ sender: UIButton) {
+    }
+    
 }

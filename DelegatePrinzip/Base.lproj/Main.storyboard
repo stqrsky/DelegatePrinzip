@@ -32,6 +32,9 @@
                                     <backgroundConfiguration key="background"/>
                                     <fontDescription key="titleFontDescription" type="system" pointSize="22"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="chooseButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U9W-qQ-xpe"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -43,15 +46,18 @@
                             <constraint firstItem="Th8-5w-lwf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ho0-mN-VIp"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="house" destination="zfh-77-Zj1" id="M7e-Td-R6D"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-23.188405797101453" y="77.678571428571431"/>
         </scene>
-        <!--View Controller-->
+        <!--Selection View Controller-->
         <scene sceneID="jmo-sJ-iLY">
             <objects>
-                <viewController id="FyM-eW-zVN" sceneMemberID="viewController">
+                <viewController id="FyM-eW-zVN" customClass="SelectionViewController" customModule="DelegatePrinzip" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3mk-WH-hS9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -77,6 +83,9 @@
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="greenKey"/>
+                                        <connections>
+                                            <action selector="greenKeyTapped:" destination="FyM-eW-zVN" eventType="touchUpInside" id="nnz-rn-aVU"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vRf-eA-Q0o">
                                         <rect key="frame" x="0.0" y="162" width="305" height="123"/>
@@ -86,6 +95,9 @@
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="yellowKey"/>
+                                        <connections>
+                                            <action selector="yellowKeyTapped:" destination="FyM-eW-zVN" eventType="touchUpInside" id="Nhj-qi-Lfm"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
